@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>nth term of the series </title>
+  </head>
+  <body>
+      <h1>ENTER THE NUMBER</h1>
+      
+    <input id="num">
+    <br></br>
+    
+   <button onclick="nthTerm()">nthTerm</button>
+
+    <p id="res"></p>
+
+    <script>
+        function nthTerm(){
+         num=document.getElementById("num").value;
+         let n;
+         if(num<=0){
+         document.write("ERROR");
+         }
+         else
+          n=num**2;
+          document.getElementById("res").innerHTML = "The nth term of the series is  :"+n
+      }
+    </script>
+  </body>
+</html>

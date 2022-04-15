@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CELCIUS TO FARENHITE</title>
+  </head>
+  <body>
+      <h1>Enter the Temprature in celcius</h1>
+      
+    <input id="temp">
+    <br></br>
+    
+   <button onclick="cToF()">cToF</button>
+
+    <p id="res"></p>
+
+    <script>
+        function cToF(){
+        c=document.getElementById("temp").value;
+        let f=(c*9/5)+32;
+        document.getElementById("res").innerHTML = "The Temprature in farenhite is  :"+f
+      
+      
+    
+}
+    </script>
+  </body>
+</html>

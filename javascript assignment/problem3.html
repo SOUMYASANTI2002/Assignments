@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AREA OF TRAINGLE </title>
+  </head>
+  <body>
+      <h1>ENTER THE SIDE OF EQUILATERAL TRIANGLE</h1>
+      
+    <input id="length">
+    <br></br>
+    
+   <button onclick="areaOfTriangle()">area</button>
+
+    <p id="res"></p>
+
+    <script>
+        function areaOfTriangle(){
+        
+        side=document.getElementById("length").value;
+        area=Math.sqrt(3)/4*side*side;
+        
+      document.getElementById("res").innerHTML = "The area of the triangle is : :"+area
+      
+      
+    
+}
+    </script>
+  </body>
+</html>

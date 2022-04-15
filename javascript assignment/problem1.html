@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>factorial </title>
+  </head>
+  <body>
+      <h1>ENTER A NUMBER</h1>
+    <input id="num">
+    <br></br>
+   <button onclick="factorial()">factorial</button>
+
+    <p id="res"></p>
+
+    <script>
+        function factorial(){
+        
+        
+
+
+
+      num=document.getElementById("num").value;
+        let i=1;
+        let fact=1;
+        if(num<0){
+            console.log("ERROR");
+        }
+         else  {
+
+        
+    
+      for(  i;i<=num;i++)
+      {
+      
+     fact=fact*i;
+      }
+      //document.write(fact);
+      document.getElementById("res").innerHTML = "The factorial is :"+fact
+      //console.log("the factorial of the given num is",fact);
+      
+    }
+}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>number of days in month</title>
+  </head>
+  <body>
+      <h1>Enter the month</h1>
+      
+    <input id="num">
+    <br></br>
+    
+   <button onclick="numOfDays()">NumOfDays</button>
+
+  
+
+    <script>
+        function numOfDays(){
+        
+        num=document.getElementById("num").value;
+        
+        if(num==1|| num==3|| num==5|| num==7|| num==8||num==10||num==12)
+        {
+        document.write("The Number of days in this month is : 31");
+         
+        }
+        else if(num==4||num==6||num==9||num==11)
+        {
+        
+        document.write("The Number of days in this month is : 30");
+        }
+        
+        else if(num==2) {
+        document.write("The Number of days in this month is : 28/29");
+        }
+       else 
+        document.write("invalid input");
+        }
+    </script>
+  </body>
+</html>
