@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>FIND THE LENGTH OF STRING</title>
-  </head>
-  <body>
-       <script>
-       const str = "      Hello       World     ";
 
-console.log(str.split(' ').join('').length);
-document.write(str.split(' ').join('').length);
-    </script>
-  </body>
+<head>
+  <title>FIND THE LENGTH OF STRING</title>
+</head>
+
+<body>
+
+  Enter the string to check
+  <input type="text" id="strIn" />
+  <button onclick="strCheck()"> PRESS </button>
+  </br>
+  Enterd string is <b id="inStr"> </b>
+
+  <br>
+
+  The Result will be : - <b id="outStr"> </b>
+
+  <script>
+    function strCheck() {
+
+      let str = document.getElementById("strIn").value;
+      document.getElementById("inStr").innerHTML = str;
+      let count = 0;
+
+      for (var i = 0; i < str.length; i++) {
+        if (str[i] == " ") {
+          count += 1;
+
+        }
+
+      }
+      document.getElementById("outStr").innerHTML = ((str.length) - count);
+
+
+    }
+
+  </script>
+
+</body>
+
 </html>
