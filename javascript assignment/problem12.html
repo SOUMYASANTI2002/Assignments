@@ -1,1 +1,56 @@
 
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+    Enter the numer till you want to check for pallindrome:-
+  <input type="number" id="inNum"> <button onclick="checkPallindrome()">SUBMIT</button>
+<br>
+  The Entere Number is <b id="checknum"></b> and the Pallindrome count is <b id="viewCount"></b>
+   <br> 
+
+  <script>
+
+    function checkPallindrome()
+      {
+        let num=document.getElementById("inNum").value;
+        document.getElementById("checknum").innerHTML=num;
+        var count=0;
+        var temp1= [];
+        for(let i=1;i<=num;i++)
+          {
+            let check=[];
+       
+        var temp=0;
+              let j=i;
+              
+              
+              while(j>0)
+                {
+                   temp=j%10;
+                  if(temp>0)
+                 { check.push(temp);}
+                  j=parseInt(j/10);
+                    // console.log(j);
+                  }
+                  const numsArr = Array.from(String(i), Number); 
+               
+                  {
+                    count=count+1;
+                    temp1.push(i);
+
+                  }
+                  check.splice(0, check.length)
+                  numsArr.splice(0, numsArr.length)
+                    
+          }
+
+        
+         document.getElementById("viewCount").innerHTML=count;
+         console.log(temp1);
+        
+      }
+  </script>
+  </body>
+</html> 
